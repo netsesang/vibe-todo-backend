@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const todoRouter = require("./routes/todos");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // MongoDB 연결 URI - 본인 환경에 맞게 변경하거나 환경변수 MONGODB_URI 사용
 const MONGODB_URI =
